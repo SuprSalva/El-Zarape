@@ -1,0 +1,18 @@
+
+.zarapeMenu
+{
+    background-color: #FEF2E4;
+    color: #000000;
+}
+ 
+/* clase hijo para la seleccion*/
+.zarapeMenu a:hover
+{
+    background-color: #fd974f;
+        color: #FEF2E4;
+}
+
+.tablas
+{
+    background-color: #C60000;
+}
