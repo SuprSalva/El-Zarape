@@ -1,0 +1,44 @@
+.zarape-menu
+{
+background-color:#fd974f;
+color: #000000;
+text-align: center;
+font-weight: bold;
+font-family: 'Helvetica', sans-serif;
+font-size: 20px;
+}
+
+
+.zarape-menu a:hover
+{
+    background-color: #C60000;
+        color: #ffffff;
+}
+
+.zarape-fondo
+{
+    background-color: #fef2e4;
+}
+
+.zapare-tablas
+{
+    background-color: #FEF2E4;
+    margin: 20px;
+}
+
+.cafe
+{
+    background-color: #805a3b;
+}
+
+.rojo
+{
+    background-color: #C60000;
+    color: #000000;
+}
+
+.btn-custom {
+    background-color: #805a3b; /* Color de fondo */
+    border: 2px solid #fef2e4; /* Contorno */
+    color: #fef2e4; /* Color del texto */
+}
