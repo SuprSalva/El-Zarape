@@ -1,4 +1,4 @@
-// Categorías
+// CategorÃ­as
 let categorias = [
     { id: 1, nombre: "Platillo" },
     { id: 2, nombre: "Torta" },
@@ -66,7 +66,7 @@ let alimentos = [
     }
 ];
 
-// Inicializa el módulo
+// Inicializa el mÃ³dulo
 export function inicializarModulo() {
     setDetalleAlimentoVisible(false);
     llenarComboBoxCategorias();
@@ -109,7 +109,7 @@ export function eliminar() {
     let idAlimento = parseInt(document.getElementById("txtId").value);
 
     if (isNaN(idAlimento) || idAlimento <= 0) {
-        Swal.fire('Error', 'ID inválido.', 'error');
+        Swal.fire('Error', 'ID invalido.', 'error');
         return;
     }
 
@@ -121,7 +121,7 @@ export function eliminar() {
         limpiar();
         Swal.fire('Eliminado', 'El alimento ha sido eliminado.', 'success');
     } else {
-        Swal.fire('Error', 'No se encontró el alimento.', 'error');
+        Swal.fire('Error', 'No se encontrÃ³ el alimento.', 'error');
     }
 }
 
@@ -176,7 +176,7 @@ function llenarTabla() {
     document.getElementById("tbodyAlimentos").innerHTML = contenido;
 }
 
-// Llenar combo de categorías
+// Llenar combo de categorÃ­as
 function llenarComboBoxCategorias() {
     let contenido = '';
 
@@ -187,7 +187,7 @@ function llenarComboBoxCategorias() {
     document.getElementById('cmbCategoria').innerHTML = contenido;
 }
 
-// Buscar posición del alimento por ID
+// Buscar posiciÃ³n del alimento por ID
 function buscarPosicionAlimentoPorID(idAlimento) {
     for (let i = 0; i < alimentos.length; i++) {
         if (alimentos[i].id === idAlimento)
@@ -223,7 +223,7 @@ function generarIDAlimento() {
     return ultimoID;
 }
 
-// Buscar categoría por ID
+// Buscar categorÃ­a por ID
 function buscarCategoriaPorID(idCategoria) {
     for (let i = 0; i < categorias.length; i++) {
         if (categorias[i].id == idCategoria)
