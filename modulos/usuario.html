@@ -1,0 +1,67 @@
+
+<div id="detalleusuario"class="container-fluid">
+    <div class="row justify-content-center text-center mt-2">
+        <div class="col-12">
+            <div class="card">
+                <div class="card-header text-center">
+                    <div class="search-bar">
+                        <input id="searchInput" type="text" class="form-control" placeholder="Buscar usuario por nombre">
+                        <button onclick="buscarUsuario()" class="btn buscar ml-2"><i class="fas fa-search"></i> Consultar</button>
+                        <div class="card-header text-center">
+                            <span class="h4">Detalle del usuario</span>
+                            <button class="btn btn-outline-danger float-end"
+                                    onclick="cm.setDetalleUsuarioVisible(false);">
+                                <i class="fas fa-times"></i>
+                            </button>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <form id="userForm">
+                                    <label for="userId" class="form-label">ID de Usuario:</label>
+                                    <input id="userId" type="text" class="form-control" placeholder="Ingresa el ID"/>
+                                    <label for="userName" class="form-label">Nombre de Usuario:</label>
+                                    <input id="userName" type="text" class="form-control" placeholder="Ingresa el nombre"/>
+                                    <label for="userPassword" class="form-label">Contraseña:</label>
+                                    <input class="col-12 form-control mt-1" type="text" id="userPassword" placeholder="La contraseña se genera automáticamente" disabled>
+                                    <div class="mt-2">
+                                        <button type="button" onclick="guardarUsuario()" class="btn btn-custom"><i class="fas fa-save"></i> Guardar</button>                        
+                                        <button type="button" onclick="eliminarUsuario()" class="btn btn-custom"><i class="fas fa-trash"></i> Eliminar</button>
+                                        <button type="button" onclick="actualizarUsuario()" class="btn btn-custom"><i class="fas fa-edit"></i> Modificar</button>
+                                    </div>
+                                </form>
+                                <p id="message"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                     <div class="card-header">
+                        <span class="h3">Usuarios</span>
+                        <button class="btn btn-outline-success float-end"
+                                onclick="cm.mostrarformularionuevo();">
+                            <i class="fas fa-search me-2"></i>
+                            Nuevo
+                        </button>
+                    </div>
+                    <div class="card-body">
+                        <div class="row">
+                            <div class="col-12">
+                                <table class="table table-hover">
+                                    <thead>
+                                        <tr>
+                                            <th>ID</th>
+                                            <th>Nombre</th>
+                                            <th>Contraseña</th>
+                                            <th>Acciones</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody id="userTableBody">
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </div> 
+
